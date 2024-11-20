@@ -6145,3 +6145,173 @@ zabbix_export:
           trends: '0'
           status: DISABLED
           description: 'The current status of the loaded module.'
+  graphs:
+    - uuid: cf57400f67e54ccfb268911235c74c30
+      name: 'VolumeUsage Vol0'
+      graph_items:
+        - sortorder: '1'
+          color: '274482'
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.0
+        - sortorder: '2'
+          color: 1A7C11
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.0
+    - uuid: 648bdbd0667a4082ab5e29ef77cec23e
+      name: 'VolumeUsage Vol1'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.1
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.1
+    - uuid: 1c7d1d478f3042a1bea7b1eb3868c01c
+      name: 'VolumeUsage Vol2'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.2
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.2
+    - uuid: 3c8b23bf5ac44e928900045783756ddc
+      name: 'VolumeUsage Vol3'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.3
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.3
+    - uuid: 871c3644450e4430b1a754bb15756657
+      name: 'VolumeUsage Vol4'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.4
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.4
+    - uuid: ea9b6ef8503148429d409628042fcdb6
+      name: 'VolumeUsage Vol5'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.5
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.5
+    - uuid: bef9fb4f714e4db2ac5b7ad547121673
+      name: 'VolumeUsage Vol6'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.6
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.6
+    - uuid: 282783be2b1a4696ac3f9ca6ece5b2b9
+      name: 'VolumeUsage Vol7'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.7
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.7
+    - uuid: 762842a8c1ca437b8efc43663f4327d5
+      name: 'VolumeUsage Vol8'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.8
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.8
+    - uuid: ccead5c8467042659a97f4930694393e
+      name: 'VolumeUsage Vol9'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.9
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.9
+    - uuid: 2da065ecb1fd4e2c90c5d8f738bcbe9d
+      name: 'VolumeUsage Vol10'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.10
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.10
+    - uuid: e386d7d0a2894d659946752db3b43e76
+      name: 'VolumeUsage Vol11'
+      graph_items:
+        - color: F63100
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volSizeLow.11
+        - sortorder: '1'
+          color: 2774A4
+          calc_fnc: ALL
+          item:
+            host: 'Nimble AF40'
+            key: NIMBLE-MIB.volUsageLow.11

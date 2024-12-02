@@ -6220,6 +6220,7 @@ zabbix_export:
   graphs:
     - uuid: cf57400f67e54ccfb268911235c74c30
       name: 'VolumeUsage Vol0'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6244,6 +6245,7 @@ zabbix_export:
             key: percentageVol0
     - uuid: 648bdbd0667a4082ab5e29ef77cec23e
       name: 'VolumeUsage Vol1'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6268,6 +6270,7 @@ zabbix_export:
             key: percentageVol1
     - uuid: 1c7d1d478f3042a1bea7b1eb3868c01c
       name: 'VolumeUsage Vol2'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6292,6 +6295,7 @@ zabbix_export:
             key: percentageVol2
     - uuid: 3c8b23bf5ac44e928900045783756ddc
       name: 'VolumeUsage Vol3'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6316,6 +6320,7 @@ zabbix_export:
             key: percentageVol3
     - uuid: 871c3644450e4430b1a754bb15756657
       name: 'VolumeUsage Vol4'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6340,6 +6345,7 @@ zabbix_export:
             key: percentageVol4
     - uuid: ea9b6ef8503148429d409628042fcdb6
       name: 'VolumeUsage Vol5'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6364,6 +6370,7 @@ zabbix_export:
             key: percentageVol5
     - uuid: bef9fb4f714e4db2ac5b7ad547121673
       name: 'VolumeUsage Vol6'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6388,6 +6395,7 @@ zabbix_export:
             key: percentageVol6
     - uuid: 282783be2b1a4696ac3f9ca6ece5b2b9
       name: 'VolumeUsage Vol7'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6412,6 +6420,7 @@ zabbix_export:
             key: percentageVol7
     - uuid: 762842a8c1ca437b8efc43663f4327d5
       name: 'VolumeUsage Vol8'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6436,6 +6445,7 @@ zabbix_export:
             key: percentageVol8
     - uuid: ccead5c8467042659a97f4930694393e
       name: 'VolumeUsage Vol9'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE
@@ -6484,6 +6494,7 @@ zabbix_export:
             key: percentageVol10
     - uuid: e386d7d0a2894d659946752db3b43e76
       name: 'VolumeUsage Vol11'
+      ymin_type_1: FIXED
       graph_items:
         - sortorder: '1'
           drawtype: BOLD_LINE

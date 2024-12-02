@@ -6095,6 +6095,78 @@ zabbix_export:
             - type: MULTIPLIER
               parameters:
                 - '1048576'
+        - uuid: 925ee9eae6284177abf7122a5b95a560
+          name: 'percentage Vol0'
+          type: CALCULATED
+          key: percentageVol0
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.0)/last(//NIMBLE-MIB.volSizeLow.0)'
+        - uuid: aef2eb36ba0344b09960bb7f2d8b156e
+          name: 'percentage Vol1'
+          type: CALCULATED
+          key: percentageVol1
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.1)/last(//NIMBLE-MIB.volSizeLow.1)'
+        - uuid: 48a7efe33ec84aff93e8733e55fd15eb
+          name: 'percentage Vol2'
+          type: CALCULATED
+          key: percentageVol2
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.2)/last(//NIMBLE-MIB.volSizeLow.2)'
+        - uuid: db2a19d65a30464d9e6248dfa61b928e
+          name: 'percentage Vol3'
+          type: CALCULATED
+          key: percentageVol3
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.3)/last(//NIMBLE-MIB.volSizeLow.3)'
+        - uuid: d546b5e157574594bc52c3b9b43a82e5
+          name: 'percentage Vol4'
+          type: CALCULATED
+          key: percentageVol4
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.4)/last(//NIMBLE-MIB.volSizeLow.4)'
+        - uuid: b01384d9037a46f0a088c70b054aec45
+          name: 'percentage Vol5'
+          type: CALCULATED
+          key: percentageVol5
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.5)/last(//NIMBLE-MIB.volSizeLow.5)'
+        - uuid: f16f58642ff24c278be63dc5ef914e23
+          name: 'percentage Vol6'
+          type: CALCULATED
+          key: percentageVol6
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.6)/last(//NIMBLE-MIB.volSizeLow.6)'
+        - uuid: 9ce4f614b611473392fb6bcfd28c032d
+          name: 'percentage Vol7'
+          type: CALCULATED
+          key: percentageVol7
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.7)/last(//NIMBLE-MIB.volSizeLow.7)'
+        - uuid: cc39c078c1cb4c62989075f5df5edad2
+          name: 'percentage Vol8'
+          type: CALCULATED
+          key: percentageVol8
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.8)/last(//NIMBLE-MIB.volSizeLow.8)'
+        - uuid: 52a5ccffd7df486cab7baba7e604e35d
+          name: 'percentage Vol9'
+          type: CALCULATED
+          key: percentageVol9
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.9)/last(//NIMBLE-MIB.volSizeLow.9)'
+        - uuid: 085cf9a1f432404eb729ba3cacb7d066
+          name: 'percentage Vol10'
+          type: CALCULATED
+          key: percentageVol10
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.10)/last(//NIMBLE-MIB.volSizeLow.10)'
+        - uuid: b2871f1388b24dfa9927ff29c58c93e8
+          name: 'percentage Vol11'
+          type: CALCULATED
+          key: percentageVol11
+          units: '%'
+          params: '100*last(//NIMBLE-MIB.volUsageLow.11)/last(//NIMBLE-MIB.volSizeLow.11)'
         - uuid: 9efc0dd785574ad897fe983d08a662f8
           name: 'dlmodError 1'
           type: SNMP_AGENT
@@ -6150,168 +6222,287 @@ zabbix_export:
       name: 'VolumeUsage Vol0'
       graph_items:
         - sortorder: '1'
+          drawtype: BOLD_LINE
           color: '274482'
           calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.0
         - sortorder: '2'
+          drawtype: FILLED_REGION
           color: 1A7C11
-          calc_fnc: ALL
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.0
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol0
     - uuid: 648bdbd0667a4082ab5e29ef77cec23e
       name: 'VolumeUsage Vol1'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.1
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.1
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol1
     - uuid: 1c7d1d478f3042a1bea7b1eb3868c01c
       name: 'VolumeUsage Vol2'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.2
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.2
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol2
     - uuid: 3c8b23bf5ac44e928900045783756ddc
       name: 'VolumeUsage Vol3'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.3
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.3
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol3
     - uuid: 871c3644450e4430b1a754bb15756657
       name: 'VolumeUsage Vol4'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.4
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.4
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol4
     - uuid: ea9b6ef8503148429d409628042fcdb6
       name: 'VolumeUsage Vol5'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.5
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.5
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol5
     - uuid: bef9fb4f714e4db2ac5b7ad547121673
       name: 'VolumeUsage Vol6'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.6
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.6
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol6
     - uuid: 282783be2b1a4696ac3f9ca6ece5b2b9
       name: 'VolumeUsage Vol7'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.7
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.7
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol7
     - uuid: 762842a8c1ca437b8efc43663f4327d5
       name: 'VolumeUsage Vol8'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.8
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.8
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol8
     - uuid: ccead5c8467042659a97f4930694393e
       name: 'VolumeUsage Vol9'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.9
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.9
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol9
     - uuid: 2da065ecb1fd4e2c90c5d8f738bcbe9d
       name: 'VolumeUsage Vol10'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.10
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.10
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol10
     - uuid: e386d7d0a2894d659946752db3b43e76
       name: 'VolumeUsage Vol11'
       graph_items:
-        - color: F63100
-          calc_fnc: ALL
+        - sortorder: '1'
+          drawtype: BOLD_LINE
+          color: '274482'
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volSizeLow.11
-        - sortorder: '1'
-          color: 2774A4
-          calc_fnc: ALL
+        - sortorder: '2'
+          drawtype: FILLED_REGION
+          color: 1A7C11
+          calc_fnc: MAX
           item:
             host: 'Nimble AF40'
             key: NIMBLE-MIB.volUsageLow.11
+        - sortorder: '3'
+          color: F63100
+          yaxisside: RIGHT
+          calc_fnc: MAX
+          item:
+            host: 'Nimble AF40'
+            key: percentageVol11

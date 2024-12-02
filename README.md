@@ -3,4 +3,6 @@ From the original output there has been some improvements:
 - Enable interesting metrics by default
 - Adding interface number to the item name
 - Converting units to proper values (I need only the lower order bytes in my case)
-- Create graphs to show the used space over time
+- Create graphs to show the used space over time with percentage of ocupation
+
+![alt text](image.png)

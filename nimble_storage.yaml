@@ -221,6 +221,8 @@ zabbix_export:
               name: 'Volume {#VOLNAME}: Usage Percentage'
               type: CALCULATED
               key: 'nimble.volume.usage.percent[{#SNMPINDEX}]'
+              history: '{$HISTORY.STANDARD}'
+              trends: '{$TRENDS.STANDARD}'
               units: '%'
               params: '100*last(//nimble.volume.usage[{#SNMPINDEX}])/last(//nimble.volume.size[{#SNMPINDEX}])'
               description: 'Percentage of space used on volume {#VOLNAME}'
@@ -321,6 +323,8 @@ zabbix_export:
               name: 'Volume {#VOLNAME}: Average Read Latency'
               type: CALCULATED
               key: 'nimble.volume.io.read.latency.avg[{#SNMPINDEX}]'
+              history: '{$HISTORY.STANDARD}'
+              trends: '{$TRENDS.STANDARD}'
               units: ms
               params: '(last(//nimble.volume.io.reads[{#SNMPINDEX}])>0)*last(//nimble.volume.io.read.latency[{#SNMPINDEX}])/max(last(//nimble.volume.io.reads[{#SNMPINDEX}]),1)'
               description: 'Average read latency for volume {#VOLNAME}'
@@ -328,6 +332,8 @@ zabbix_export:
               name: 'Volume {#VOLNAME}: Average Write Latency'
               type: CALCULATED
               key: 'nimble.volume.io.write.latency.avg[{#SNMPINDEX}]'
+              history: '{$HISTORY.STANDARD}'
+              trends: '{$TRENDS.STANDARD}'
               units: ms
               params: '(last(//nimble.volume.io.writes[{#SNMPINDEX}])>0)*last(//nimble.volume.io.write.latency[{#SNMPINDEX}])/max(last(//nimble.volume.io.writes[{#SNMPINDEX}]),1)'
               description: 'Average write latency for volume {#VOLNAME}'

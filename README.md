@@ -426,11 +426,12 @@ grep -i snmp /var/log/messages
 ---
 
 ## Screenshots
-### Template
+### Template Settings
 ![Template](screenshots/Template.png)
 ![Template Items](screenshots/Template%20Items.png)
 ![Template Macros](screenshots/Template%20Macros.png)
 ![Template Mapping](screenshots/Template%20Mapping.png)
+### Volume Discovery Settings
 ![Template Volume Discovery](screenshots/Template%20Volume%20Discovery.png)
 ![Template Volume Discovery Items](screenshots/Template%20Volume%20Discovery%20Items.png)
 ![Template Volume Discovery Triggers](screenshots/Template%20Volume%20Discovery%20Triggers.png)

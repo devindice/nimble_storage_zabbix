@@ -425,4 +425,18 @@ grep -i snmp /var/log/messages
 
 ---
 
+## Screenshots
+### Template
+![Template](screenshots/Template.png)
+![Template Items](screenshots/Template%20Items.png)
+![Template Macros](screenshots/Template%20Macros.png)
+![Template Mapping](screenshots/Template%20Mapping.png)
+![Template Volume Discovery](screenshots/Template%20Volume%20Discovery.png)
+![Template Volume Discovery Items](screenshots/Template%20Volume%20Discovery%20Items.png)
+![Template Volume Discovery Triggers](screenshots/Template%20Volume%20Discovery%20Triggers.png)
+![Template Volume Discovery Graphs](screenshots/Template%20Volume%20Discovery%20Graphs.png)
+
+
+---
+
 *Last updated: June 2025 - Template version 1.1*
